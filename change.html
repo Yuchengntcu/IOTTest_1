@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>貨幣轉換器</title>
+<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+<script src="JavaScript/Change.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <!-- 選單項目 -->
+        <a href="index.html">首頁</a>
+        <a href="change.html">匯率及幣值轉換</a>
+        <a href="diary.html">旅遊日誌</a>
+        <a href="schedule.html">行程規劃</a>
+        <a href="destination.html">旅遊國家一覽</a>
+      </div>
+<h2>貨幣轉換器</h2>
+
+<div>
+  <label for="amount">請輸入金額：</label>
+  <input type="number" id="amount" oninput="convertCurrency()">
+</div>
+
+<div>
+  <label for="from">從：</label>
+  <select id="from" onchange="convertCurrency()">
+    <option value="TWD">台幣</option>
+    <option value="JPY">日幣</option>
+    <option value="KRW">韓幣</option>
+  </select>
+</div>
+
+<div>
+  <label for="to">到：</label>
+  <select id="to" onchange="convertCurrency()">
+    <option value="JPY">日幣</option>
+    <option value="KRW">韓幣</option>
+    <option value="TWD">台幣</option>
+  </select>
+</div>
+
+<div id="result"></div>
+</body>
+</html>

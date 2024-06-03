@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>旅遊資訊網</title>
+<style>
+  /* CSS 樣式，用於樣式化橫幅 */
+  /* CSS 樣式，用於樣式化橫幅 */
+  #banner {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #banner img {
+    width: 100%; /* 圖片寬度設為100% */
+    height: 100%; /* 圖片高度設為100% */
+    object-fit: contain; /* 使用 contain 適應橫幅 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+</style>
+
+<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+
+</head>
+<body>
+  <div id="navbar">
+    <!-- 選單項目 -->
+    <a href="index.html">首頁</a>
+    <a href="change.html">匯率及幣值轉換</a>
+    <a href="diary.html">旅遊日誌</a>
+    <a href="schedule.html">行程規劃</a>
+    <a href="destination.html">旅遊國家一覽</a>
+  </div>
+<div id="banner">
+  <img src="Image/Happy.png" alt="圖片1" class="active">
+  <img src="Image/Japan.png" alt="圖片2">
+  <img src="Image/Korean.png" alt="圖片3">
+</div>
+<script src="JavaScript/Script.js"></script>
+<script>
+  window.embeddedChatbotConfig = {
+  chatbotId: "99IW7fdVgT6TnCuZPxpcR",
+  domain: "www.chatbase.co"
+  }
+  </script>
+  <script
+  src="https://www.chatbase.co/embed.min.js"
+  chatbotId="99IW7fdVgT6TnCuZPxpcR"
+  domain="www.chatbase.co"
+  defer>
+  </script>
+</body>
+</html>

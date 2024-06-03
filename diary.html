@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日誌</title>
+<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+<script src="JavaScript/Diary.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <!-- 選單項目 -->
+        <a href="index.html">首頁</a>
+        <a href="change.html">匯率及幣值轉換</a>
+        <a href="diary.html">旅遊日誌</a>
+        <a href="schedule.html">行程規劃</a>
+        <a href="destination.html">旅遊國家一覽</a>
+      </div>
+<h2>寫日誌</h2>
+
+<div>
+  <label for="year">年份：</label>
+  <input type="number" id="year" value="" min="1900" max="2100">
+  <label for="month">月份：</label>
+  <input type="number" id="month" value="" min="1" max="12">
+  <label for="day">日期：</label>
+  <input type="number" id="day" value="" min="1" max="31">
+</div>
+
+<div>
+  <label for="journal">日誌內容：</label><br>
+  <textarea id="journal" rows="4" cols="50"></textarea>
+</div>
+
+<button onclick="saveJournal()">儲存日誌</button>
+
+<h2>存儲的日誌</h2>
+<ul id="journalList"></ul>
+
+<script>
+
+</script>
+
+</body>
+</html>
